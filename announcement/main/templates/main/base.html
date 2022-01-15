@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+{% block nav %}
+            <nav>
+        <div class="nav">
+            <div>
+                <a href="{% url 'index' %}">Index</a>
+                <a href="{% url 'anons' %}">Announcement</a>
+                <a href="{% url 'registration' %}">Registration</a>
+            </div>
+        </div>
+    </nav>
+{% endblock %}
+
+{% block form %}
+{% endblock %}
+
+    <div class="anons">
+        {% block messages %}
+        {% endblock %}
+    </div>
+{% block test %}
+{% endblock %}
+
+{% block error %}
+{% endblock %}
+
+</body>
+</html>
