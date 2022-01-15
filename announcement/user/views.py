@@ -15,3 +15,5 @@ def registration_user(request):
         'form': form
     }
     return render(request, 'user/register_user.html', context)
+
+
